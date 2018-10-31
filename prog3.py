@@ -1,3 +1,6 @@
+#CIS424 Project 3
+#Brett Dawson, Dorothy Zhao
+
 import functools #for reduce
 L = [-3.5, 4.12, 5.4, -7.8, 8.09, 4.2222, 2.5, 2.1]
 
