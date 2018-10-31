@@ -1,4 +1,40 @@
+#CIS424 Project 3
+#Brett Dawson, Dorothy Zhao
 
+#1
+fun secondElement(L) = hd(tl(L));
+
+#2
+fun removeThird(L) = 
+	if L = [] then []
+	else 	
+		hd(L)::tl(tl(tl(L)));
+		
+#3
+fun maxMin(a, b, c) =
+	let val array = [];
+in 
+if (a < b) then
+	if (b < c) then
+		a::c::array
+	else if (c < a) then
+		c::b::array
+	else 	
+		a::b::array
+else if (b < a) then
+	if (c < b) then
+		c::a::array
+	else if (a < c) then
+		b::c::array
+		else
+		b::a::array
+else 	
+	a::b::array
+end;
+
+#4
+fun flip (x::y::z) = y::x::flip z
+	| flip _ = [];
 
 #5
 fun Map (F, nil) = nil
